@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(180deg, var(--colorDark1), var(--colorDark2));
+}
+.container{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.options button{
+    font-size: .9rem;
+    letter-spacing: 1.5px;
+    padding: 7px 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.access-page{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.shadow{
+    background-color: rgba(255,255,255, 0.4);
+}
+
+.access-page img{
+    width: 5rem;
+    height: 5rem;
+}
+.access-page h3{
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.access-page p {
+    margin-top: 14px;
+}
+.access-page button{
+    margin-top: 24px;
+    color: white;
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--colorDark2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-page-before{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    opacity: 0;
+}
+.search-page-before input{
+    width: 90%;
+    height: 2.6rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(255,255,255, 0.4);
+}
+.search-page-before input::placeholder{
+    color: var(--colorLight1);
+}
+.search-page-before input:focus{
+    border: 2px solid white;
+}
+.search-page-before img{
+    height: 2.7rem;
+    width: 2.7rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.1);
+}
