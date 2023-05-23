@@ -99,7 +99,7 @@ h2{
     width: 100%;
     position: absolute;
     top: 25%;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .search-page-before input{
     width: 90%;
@@ -125,4 +125,73 @@ h2{
     padding: 10px;
     border-radius: 50%;
     background-color: rgba(255,255,255, 0.1);
+}
+
+.search-page-after{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    /* left: 40%; */
+}
+.search-page-after .head{
+    display: flex;
+    justify-content: center;
+}
+.search-page-after .head img{
+    width: 3rem;
+    height: 3rem;
+}
+.search-page-after .city{
+    font-size: 3rem;
+}
+.search-page-after .weather{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.search-page-after img{
+    margin-top: 10px;
+    height: 5rem ;
+    width: 5rem;
+}
+.search-page-after .temp{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.additional-info{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.additional-info .card{
+    padding: 5px;
+    width: 31%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255, 0.4);
+    border-radius: 10px;
+}
+.additional-info .card img{
+    margin-top: 10px;
+    width: 3rem;
+    height: 3rem;
+}
+.additional-info .card p{
+    margin-top: 4px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.additional-info .card div{
+    margin-top: 4px;
+    font-size: 1.4px;
+
 }
