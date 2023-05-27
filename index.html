@@ -14,28 +14,34 @@
 
             <div class="options">
 
-                <button class="button1">Your Weather</button>
+                <button class="button1" userWeather>Your Weather</button>
 
-                <button class="button2"> Search Weather</button>
+                <button class="button2" searchWeather> Search Weather</button>
 
             </div>
 
             <!-- page to access location -->
             <div class="access-page">
-                <img src="./asset/location.png" alt="">
+                <img src="./asset/location.png" alt="" loading="lazy">
                 <h3>Grant Location Access</h3>
                 <p>Allow Access To Get Weather Information</p>
 
-                <button>grant access</button>
+                <button grant-access> grant access</button>
 
             </div>
 
             <!-- page before search -->
-            <div class="search-page-before">
+            <div class="search-page-before" data-search>
 
-                <input type="search" placeholder="Search for city ...">
+                <input type="search" placeholder="Search for city ..." data-search-input>
                 <img src="asset/search.png" alt="">
 
+            </div>
+
+            <!-- loading container -->
+
+            <div class="loading-container">
+                <img src="./asset/loading.gif" alt="" width="150" height="150" loading="lazy">
             </div>
 
             <!-- page after search -->
@@ -43,41 +49,39 @@
             <div class="search-page-after">
                 <div class="head">
                     <div class="city" city>City</div>
-                    <img src="./asset/cloud.png" alt="">
+                    <img src="./asset/cloud.png" alt="" flag>
                 </div>
                 <p class="weather" weather>Cloud</p>
                 <img src="./asset/01d.png" alt="" weather-img>
-                <div class="temp"temperature>35 ºC</div>
+                <div class="temp" temperature>35 ºC</div>
 
                 <div class="additional-info">
+
                     <div class="card">
                         <img src="asset/wind.png" alt="">
                         <p>windspeed</p>
                         <div windspeed>460m/s</div>
-                        
                     </div>
+
                     <div class="card">
                         <img src="asset/humidity.png" alt="">
                         <p>humidity</p>
-                        <div humidity>460%</div>
-                        
+                        <div humidity>460%</div> 
                     </div>
+
                     <div class="card">
                         <img src="asset/cloud.png" alt="">
                         <p>cloud</p>
                         <div cloud>460%</div>
-                        
                     </div>
+
                 </div>
             </div>
-            
 
-
-
-
-
+           
         </div>
 
+   
 
 
 
